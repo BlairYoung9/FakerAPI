@@ -31,15 +31,15 @@ class Company{
 }
 
 app.get("/api/users/new/", (req,res) => {
-    res.json(User);
+    res.json(new User());
 });
 
 app.get("/api/companies/new/", (req,res) => {
-    res.json(Company);
+    res.json(new Company());
 });
 
 app.get("/api/user/company/", (req,res) => {
-    res.json(Company);
+    res.json( new Company());
 });
 
 console.log("hello world")
